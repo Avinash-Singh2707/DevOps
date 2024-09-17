@@ -1,0 +1,20 @@
+-> Saravanan Seenivasan
+
+# Build Pipeline (which is Continous Integration)
+# Release Piepline (which is continous Delivery)
+-> We deploy the code and generate the artifact(Build Pipeline), we have pass this artifact 
+to each environment like each stages (DEV,QA,STAGE,PROD) to deploy same code but give
+app services in running
+
+# AZURE PIPELINE
+-> CI is used to automate tests and build for projects and it used to find bug or any other 
+issues in this CI phase.
+-> CD is used to automatically deploy and test code in multiple stages like (dev,qa,uat,stage
+prod...) (Release Pipeline)
+After building our project, We have to pass our build across different environments
+Stages means different environment (Organization need they may maintain different number of ENV)
+So we have deploy those code and changes to different environments.
+At the end of release we have to go for production release.
+We have to create Release pipeline for each environments.
+
+#What is Stage?

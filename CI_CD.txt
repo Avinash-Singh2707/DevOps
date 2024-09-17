@@ -1,0 +1,35 @@
+Production Server -> FTP
+Development Server -> 
+Log file, Any folder you miss
+
+-> BUNCH of file update on server. Same time to update
+
+First we need code repository -> where we store code in one centralised manner
+Continous Integration ->
+Continous Delivery/Developement ->
+System build the code and test-> Agent
+
+#Below are the tools we can build CI/CD pipeline
+// JENKIN is tool help to setup server,build-in testing and deployment
+// AZURE Pipelines -> 
+// GitHub Actions -> 
+
+-----Navin Reddy---------
+Waterfall model-> 1Year
+Agile -> 2-3month -> Intergarion all module -> some test may get failed
+CI -> Modules Continous integration (Write,Commit and TEST)
+So every project is tested and confident this project is working.
+
+Continuous Delivery : Making it available for the deployment. (MOCK SERVER)
+Mimick those thing how ur project is running on mock server.
+
+Continous Deployemnt:(Bit-Scary), the moment you commit a code,
+after automation testing, your code Directly deploy on the production server.
+
+
+-----------
+Thycotic talk to DMZ
+Extranet Server
+Win shell script
+shell script
+it will do service name in two different domain

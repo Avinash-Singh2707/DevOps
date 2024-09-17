@@ -1,0 +1,42 @@
+-> A Docker is a platform that helps developers build,share and run applications with container.
+-> A Docker Container has everthing about project like code, runtime system tools, system libraries and settings with specific version.
+-> We use this container to build, run and share code or project.
+
+A docker is a platform for building, running and shipping Applications.
+If your application in running on your development machine, it can run or function the
+same way in another machine.
+
+-> It work on my machine, but not on some other machine
+Reason -> One or more file missing -> Not properly deployed
+       -> Software version mismacth -> Target machine is running a different verion of software that your application needs.
+       -> Different Configuration Settings -> Enviornment variables are  different accros machine
+	
+With Docker we can easily pacaged our application, everything it needs and run it anywhere with docker.
+You can take this package and run it on any machine that runs docker.
+If it work on your development machine, it will definetly work in test and production machines
+They do not set new machine,They do not have install software and configure all those dependencies. (Save time)  
+
+Isolated Environment called Container.
+Container allows multiple application to use different version of some software side by side on the machine without messing with each other.
+So, One application may use node 14 and other node 16.
+Docker allows us to consistently run an application on different machines.
+
+6:37-> A Container is an isolated environment for running an application.
+Q-> HOW container is different from virtual machine?
+A virtual machine is an Abstraction of machine, so we can have several virtual machine on a real physical machine.
+For example we have MAC and on this MAC, we can run two virtual machine -> Windows and Linux using Hypervisor(A software use to create and manage virtual machine, VMware,VirtualBox).
+
+PROBLEMS:-> Each VM needs a full-blown OS(Licensed,Patch and monitores)
+	 -> Slow to start
+	 -> Resource Intensive (Physical hardware resource like cpu,disk space)
+Container give same kind of Isolation
+-> Allow running multiple apps in isolation.
+-> Also lighweight (they don't need full OS)
+-> Use OS of the host (Infact all container on a single machine share the OS of the host, so we need licensed,patch and monitored single OS)
+-> Start quickly (because OS has already started)
+-> Need less hardware resources
+
+(9:40)#Architecture of Docker
+-> Docker uses a client server architecture, it has a client component that talks to a server component using REST API.
+-> The server also called Docker Engine, sits in the background and take care of building and running docker containers.
+-> All these container share the kernal of the host. Kernal is the core of the OS(manages applications and hardware resouces like memory and CPU).

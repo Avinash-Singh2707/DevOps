@@ -1,0 +1,60 @@
+Agent Pools -> This is the place where you need to configure your own VM or any other
+virtual machine on which you want to build your application.
+So I created a pool and added Agent.
+
+-> You need to add your own VM as an agent, when you need to run and deploy ur application
+
+What is Agent?-> Agent is an Individual machine that can process pipelie jobs. When a 
+pipeline job is triggered, Azure DevOps selects an available agent from the pool to run the 
+job.
+
+---------
+An agent is a piece of software that runs the pipelines, allowing you to execute build,
+test and deployment task.
+There are two modes to run an Azure DevOps agent:
+1. Service Mode: This is the default mode.When the agent is installed, it runs as a service
+in the background without requiring user intreaction.It's ideal for long-runnung task and servers.
+2. Interactive Mode: This mode allows you to run the agent interactively, which means it requires
+a user to be logged in, and tasks can be monitored directly through terminal or CLI.
+It doesn't run in the background like a service.Running in interactive mode is useful 
+when debugging tasks or testing configuration locally.
+
+# Why Interactive Mode?-> Debugging, User-Interaction, Testing on local machine
+----------------------------------
+#ADO AGENT: are software components that run jobs from your Azure Pipeline. An agent is a 
+tool that executes tasks defined in a pipeline.An agent is a tool that executes tasks defined
+in a pipelin, such as compiling code, running tests, and deploying applicatios. The agent is
+responsible for carrying out the steps of the pipeline by using the machine resources on which
+it is installed.
+-> Types of ADO agent:
+
+A. Mircrosoft-Hosted Agents:These are managed by microsoft and run in the cloud.
+2. You don't need to worry about setting up the environment or maintaining the agent.
+3.However, you might have limited control over the environment, and the builds migh take longer
+depending on availability,
+4.Ideal for projects that don't require specific software or customization in the agent environment.
+
+B. Self-Hosted Agents:These agents run on machines that you own and manage, either on premises
+or in the cloud.
+2.You can configure this machine with specific software tools, or configuration that your project
+needs.
+3.Provides full control over the environment but requires maintenance and monitoring of the agent.
+
+#How ADO agents WORK?
+-> When a pipeline is triggered in Azure DevOps, it needs an agent to execute the tasks.
+-> The pipeline sends the jobs to an agent, and the agent carries out the steps, reporting back the result.
+-> Agents can be configured to run jobs on specific OS (Win,Linux,MacOS) depending on the project requirements
+
+#Key features:
+-> Scalability:You can have multiple agents working in parallel to speed up your pipelines.
+-> Customization: With self-hosted agent, you can install any software required for your builds.
+-> Security: Agent can run in isolated environments with appropriate security policies.
+
+# Use cases for ADO Agents:
+-> Build Automation: Compiling source code, running tests and producing binaries.
+-> CI/CD: Automating the entire pipeline for building,testing and deploying applications.
+-> Custom Envionments: Self hosted agents allow for highly specific software and hardware configurations.
+
+In short, ADO agents are the workhorses that execute pipeline task and are critical for running
+automated processes in ADO.
+
